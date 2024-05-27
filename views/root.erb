@@ -5,9 +5,9 @@
 
 
 <ul>
-  <% @list_of_countries_abbr.each do |show| %>
+  <% @currencies.each_key do |show| %>
     <li>
-      <a href= "/<%= @list_of_countries_abbr[5] %> ">Convert 1 <%= show %> to...</a>
+      <a href= "/<%= show %> "> Convert 1 <%= show %> to...</a>
     </li>
   <% end %>
 </ul>
