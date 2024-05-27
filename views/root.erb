@@ -1,5 +1,4 @@
 
-<%= @ %>
 
 
 <h1> Currency pairs </h1> 
@@ -8,7 +7,7 @@
 <ul>
   <% @list_of_countries_abbr.each do |show| %>
     <li>
-      <a href= "/<%= @bc %>" >Convert 1 <%= show %> to...</a>
+      <a href= "/<%= @list_of_countries_abbr[5] %> ">Convert 1 <%= show %> to...</a>
     </li>
   <% end %>
 </ul>

@@ -1,5 +1,21 @@
 
+<h1> Currency pairs </h1> 
 
 
+<ul>
 
-<h1> youp </h1>
+<% a = 0 %>
+
+<% while a < @amount_of_currencies %>
+
+  <% @amount_of_currencies.times do %>
+
+    <li>
+      <a href= "<%= %> ">Convert 1 <%= @bc %> to <%= @list_of_countries_abbr[a] %>...</a>
+    </li>
+<% a += 1 %>
+  <% end %>
+  
+  <%end%>
+
+</ul>
