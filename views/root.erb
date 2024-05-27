@@ -1,7 +1,14 @@
 
+<%= @ %>
 
 
-<h1> JSON Data </h1> 
+<h1> Currency pairs </h1> 
 
 
-<%= @parsed_data %>
+<ul>
+  <% @list_of_countries_abbr.each do |show| %>
+    <li>
+      <a href= "/<%= @bc %>" >Convert 1 <%= show %> to...</a>
+    </li>
+  <% end %>
+</ul>
