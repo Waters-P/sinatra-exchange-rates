@@ -1,21 +1,26 @@
 
-<h1> Currency pairs </h1> 
 
+
+
+<h1> Convert <%= @bc %> </h1> 
+
+<p>Go<a href="/"> back.</a></p>
 
 <ul>
 
 <% a = 0 %>
 
-<% while a < @amount_of_currencies %>
 
-  <% @amount_of_currencies.times do %>
+  <% @currencies.keys.each do |tc| %>
 
     <li>
-      <a href= "/<%= @bc %>/<%= @list_of_countries_abbr[9] %> ">Convert 1 <%= @bc %> to <%= @list_of_countries_abbr[a] %>...</a>
+      <a href= "/<%= @bc %>/<%= tc %>">Convert 1 <%= @bc %> to <%= tc %></a>
     </li>
-<% a += 1 %>
+
+  <% a += 1 %>
+
   <% end %>
   
-  <%end%>
+ 
 
 </ul>

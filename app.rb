@@ -45,6 +45,9 @@ get("/:base_currency") do
 
   @bc = params.fetch(:base_currency)
   
+
+  
+
   exchange_rate_url = "https://api.exchangerate.host/list?access_key=#{ENV.fetch("EXCHANGE_RATE_KEY")}"
 
 
